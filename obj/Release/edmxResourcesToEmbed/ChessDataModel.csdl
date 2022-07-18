@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Online_ChessModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="OnlineChess">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ChessResultDetails" Relationship="Online_ChessModel.FK__ChessResu__UserI__4222D4EF" FromRole="OnlineChess" ToRole="ChessResultDetail" />
+  </EntityType>
+  <EntityContainer Name="Online_ChessEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OnlineChesses" EntityType="Self.OnlineChess" />
+    <EntitySet Name="ChessResultDetails" EntityType="Online_ChessModel.ChessResultDetail" />
+    <EntitySet Name="ChessResultMasters" EntityType="Online_ChessModel.ChessResultMaster" />
+    <AssociationSet Name="FK__ChessResu__Resul__38996AB5" Association="Online_ChessModel.FK__ChessResu__Resul__38996AB5">
+      <End Role="ChessResultMaster" EntitySet="ChessResultMasters" />
+      <End Role="ChessResultDetail" EntitySet="ChessResultDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChessResu__UserI__4222D4EF" Association="Online_ChessModel.FK__ChessResu__UserI__4222D4EF">
+      <End Role="OnlineChess" EntitySet="OnlineChesses" />
+      <End Role="ChessResultDetail" EntitySet="ChessResultDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChessResultDetail">
+    <Key>
+      <PropertyRef Name="ChessResultDetailsID" />
+    </Key>
+    <Property Name="ChessResultDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ResultMasterID" Type="Int32" />
+    <Property Name="Inserteddate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ChessResultMaster" Relationship="Online_ChessModel.FK__ChessResu__Resul__38996AB5" FromRole="ChessResultDetail" ToRole="ChessResultMaster" />
+    <Property Name="UserID" Type="Int32" />
+    <NavigationProperty Name="OnlineChess" Relationship="Online_ChessModel.FK__ChessResu__UserI__4222D4EF" FromRole="ChessResultDetail" ToRole="OnlineChess" />
+  </EntityType>
+  <EntityType Name="ChessResultMaster">
+    <Key>
+      <PropertyRef Name="ResultMasterID" />
+    </Key>
+    <Property Name="ResultMasterID" Type="Int32" Nullable="false" />
+    <Property Name="ResultStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ChessResultDetails" Relationship="Online_ChessModel.FK__ChessResu__Resul__38996AB5" FromRole="ChessResultMaster" ToRole="ChessResultDetail" />
+  </EntityType>
+  <Association Name="FK__ChessResu__Resul__38996AB5">
+    <End Type="Online_ChessModel.ChessResultMaster" Role="ChessResultMaster" Multiplicity="0..1" />
+    <End Type="Online_ChessModel.ChessResultDetail" Role="ChessResultDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChessResultMaster">
+        <PropertyRef Name="ResultMasterID" />
+      </Principal>
+      <Dependent Role="ChessResultDetail">
+        <PropertyRef Name="ResultMasterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChessResu__UserI__4222D4EF">
+    <End Type="Online_ChessModel.OnlineChess" Role="OnlineChess" Multiplicity="0..1" />
+    <End Type="Online_ChessModel.ChessResultDetail" Role="ChessResultDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OnlineChess">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="ChessResultDetail">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

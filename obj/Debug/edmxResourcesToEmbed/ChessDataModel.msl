@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Online_ChessModelStoreContainer" CdmEntityContainer="Online_ChessEntities">
+    <EntitySetMapping Name="OnlineChesses">
+      <EntityTypeMapping TypeName="Online_ChessModel.OnlineChess">
+        <MappingFragment StoreEntitySet="OnlineChess">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChessResultDetails">
+      <EntityTypeMapping TypeName="Online_ChessModel.ChessResultDetail">
+        <MappingFragment StoreEntitySet="ChessResultDetails">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Inserteddate" ColumnName="Inserteddate" />
+          <ScalarProperty Name="ResultMasterID" ColumnName="ResultMasterID" />
+          <ScalarProperty Name="ChessResultDetailsID" ColumnName="ChessResultDetailsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChessResultMasters">
+      <EntityTypeMapping TypeName="Online_ChessModel.ChessResultMaster">
+        <MappingFragment StoreEntitySet="ChessResultMaster">
+          <ScalarProperty Name="ResultStatus" ColumnName="ResultStatus" />
+          <ScalarProperty Name="ResultMasterID" ColumnName="ResultMasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

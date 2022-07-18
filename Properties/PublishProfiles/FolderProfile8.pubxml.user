@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Chess_publish_code\Publish_1272022</_PublishTargetUrl>
+    <History>True|2022-07-12T16:57:38.3224802Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Chess-master_2.dll">
+      <publishTime>07/12/2022 22:27:37</publishTime>
+    </File>
+    <File Include="bin/Chess-master_2.pdb">
+      <publishTime>07/12/2022 22:27:37</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>02/24/2013 08:32:58</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>02/24/2013 08:33:00</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.GoogleOAuth2.dll">
+      <publishTime>08/11/2013 20:28:46</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>02/24/2013 08:33:04</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>02/24/2013 08:33:06</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>02/24/2013 08:33:14</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>02/24/2013 08:33:16</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.dll">
+      <publishTime>03/28/2022 13:31:28</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.Mvc.dll">
+      <publishTime>03/28/2022 13:31:38</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.Mvc.pdb">
+      <publishTime>03/28/2022 13:31:38</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.pdb">
+      <publishTime>03/28/2022 13:31:28</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.PlatformServices.dll">
+      <publishTime>03/28/2022 13:31:44</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Calendar.v3.dll">
+      <publishTime>05/26/2022 13:45:48</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Calendar.v3.pdb">
+      <publishTime>05/26/2022 13:45:48</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Core.dll">
+      <publishTime>03/28/2022 13:31:26</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Core.pdb">
+      <publishTime>03/28/2022 13:31:26</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.dll">
+      <publishTime>03/28/2022 13:31:26</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.pdb">
+      <publishTime>03/28/2022 13:31:26</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.PlatformServices.dll">
+      <publishTime>03/28/2022 13:31:28</publishTime>
+    </File>
+    <File Include="bin/GoogleAuthentication.dll">
+      <publishTime>01/30/2022 20:50:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/25/2019 16:27:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/25/2019 16:27:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Membership.OpenAuth.dll">
+      <publishTime>02/24/2014 19:19:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/11/2022 05:01:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>05/11/2022 05:01:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 18:46:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>05/11/2022 05:01:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>05/11/2022 05:01:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 18:46:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Mono.Math.dll">
+      <publishTime>02/24/2013 08:33:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/18/2021 01:33:36</publishTime>
+    </File>
+    <File Include="bin/Org.Mentalis.Security.Cryptography.dll">
+      <publishTime>02/24/2013 08:33:14</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 17:49:34</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>08/26/2015 22:03:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 12:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="ChessDataModel.edmx.diagram">
+      <publishTime>07/12/2022 12:38:29</publishTime>
+    </File>
+    <File Include="Code2Night.jpeg">
+      <publishTime>07/08/2022 19:43:11</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/18/2022 12:10:48</publishTime>
+    </File>
+    <File Include="Content/stats.css">
+      <publishTime>06/24/2022 11:48:45</publishTime>
+    </File>
+    <File Include="Content/styles.css">
+      <publishTime>07/12/2022 21:19:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/18/2022 12:05:08</publishTime>
+    </File>
+    <File Include="Images/Icons/Dropdown.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Icons/WebsiteIcon.png">
+      <publishTime>06/18/2022 18:21:46</publishTime>
+    </File>
+    <File Include="Images/KingInCheck.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/githubLogo.jpg">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/Instagram.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/linkedInLogo.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/personalWebsite.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/youtubeLogo.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/MoveIndicator.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackBishop.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackKing.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackKnight.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackPawn.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackQueen.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackRook.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/Blank.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteBishop.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteKing.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteKnight.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhitePawn.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteQueen.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteRook.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Tint.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="img/login-google.png">
+      <publishTime>07/12/2022 20:59:10</publishTime>
+    </File>
+    <File Include="Scripts/app.js">
+      <publishTime>07/12/2022 20:46:39</publishTime>
+    </File>
+    <File Include="Scripts/ComputerPlayer.js">
+      <publishTime>07/04/2022 12:15:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery.min.js">
+      <publishTime>06/27/2022 22:15:01</publishTime>
+    </File>
+    <File Include="Scripts/Pieces.js">
+      <publishTime>07/02/2022 19:46:26</publishTime>
+    </File>
+    <File Include="Scripts/stats.js">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Sound/ChessMoveSound.mp3">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/12/2022 21:48:42</publishTime>
+    </File>
+    <File Include="Views/Home/Login.cshtml">
+      <publishTime>06/24/2022 12:04:47</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/12/2022 12:48:36</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>06/18/2022 12:05:08</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/25/2022 16:18:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/12/2022 22:27:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

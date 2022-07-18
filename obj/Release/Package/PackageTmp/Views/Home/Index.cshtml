@@ -1,0 +1,207 @@
+﻿@{ ViewBag.Title = "Index"; }
+
+
+@model Chess_master_2.Models.Online_Chess
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h2 style="color:red"><strong>@TempData["LoginError"]</strong></h2>
+    <div>
+        @if (Session["UserName"] != null)
+        {@*<text><b> welcome @Session["UserName"].ToString() </b></text><br />*@
+                        <script type="text/javascript">
+                        $(document).ready(function () {
+                            if ('@Session["UserName"]' != null) {
+                                $(".userloginbutton").hide();
+                                $(".signupButton").hide();
+                            }
+                        });
+                        </script>
+}
+
+        <button class="signupButton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>&nbsp;&nbsp;
+        <button class="userloginbutton" onclick="document.getElementById('loginid').style.display='block'" style="width:auto">Login</button>
+
+        @if (Session["UserID"] != null)
+        {
+<button class="logout" onclick="location.href = '@Url.Action("LogOut", "Home")'">Log Out</button>}
+        <br /><br />
+        @*<div class="bottomtopTimer">
+            <p id="bottomTimer">10:00</p>
+        </div>*@
+
+        <div class="Container">
+            <div id="Board">
+            </div>
+        </div>
+
+        <br /><br />
+        @*<div class="bottomtopTimer">
+            <p id="topTimer">10:00</p>
+        </div>*@
+        @*<div class="timer"></div>*@
+        <div class="buttonsContainer">
+            <button class="resignButton" onclick="resign()">Resign</button>
+            @*<button class="drawButton" onclick="drawGame()">Draw</button>*@
+        </div>
+
+        <div class="CapturedPiecesContainer">
+            <div class="WhitePiecesCaptured">
+
+            </div>
+            <div class="BlackPiecesCaptured">
+
+            </div>
+        </div>
+
+        <script src="~/Scripts/Pieces.js"></script>
+        <script src="~/Scripts/app.js"></script>
+        <script src="~/Scripts/ComputerPlayer.js"></script>
+
+
+        <div id="id01" class="modal PopUpBody ">
+            <form id="signPopUp" class="modal-content " method="post">
+                <div class="form ">
+                    @using (Html.BeginForm())
+                    {
+        <div class="signdetails">
+            <label><b>Sign Up</b></label>
+        </div>
+                        <div class="container1" style="color:black">
+                            <div>
+                                <label><b>User Name:</b></label>
+                                @Html.TextBoxFor(m => m.UserName, new { @placeholder = "Enter Name", @required = "Required", @style = "height: 36px;" })
+                            </div>
+                            <div>
+                                <label><b>Email_ID:</b></label>&nbsp;&nbsp;
+                                @Html.TextBoxFor(m => m.Email_ID, new { @id = "email", @placeholder = "Enter e-mail", @required = "Required", @style = "height: 36px;" })
+                            </div>
+                            <div>
+                                <label><b>Password:</b></label>
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @placeholder = "Enter Password", @type = "Password", @required = "Required", @style = "height: 36px;" })
+                            </div>
+                            <div>
+                                <label><b>Country:</b></label>&nbsp;&nbsp;&nbsp;
+                                @Html.TextBoxFor(m => m.Country, new { @id = "email", @placeholder = "Enter Country", @required = "Required", @style = "height: 36px;" })
+                            </div>
+                        </div>
+                                        <div>
+                                            <input type="submit" name="sub" value="Sign Up" class="loginButton" />&nbsp;
+                                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelButton" id="signcancel">Cancel</button>
+                                        </div>
+                                                        <br />
+                                                                        <br />}
+                </div>
+            </form>
+        </div>
+
+        <div id="loginid" class="modal PopUpBody">
+            <form id="loginPopUp" class="modal-content" method="post">
+                <div class="form">
+                    @using (Html.BeginForm())
+                    {
+        <div class="logindetails">
+            <label><b>Login</b></label>
+        </div>
+                        <div class="container1" style="color:black">
+                            <div>
+                                <label><b>User Name:</b></label>
+                                @Html.TextBoxFor(m => m.UserName, new { @placeholder = "Enter Name", @required = "Required" })
+                            </div>
+                            <div>
+                                <label><b>Password:</b></label>&nbsp;
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @placeholder = "Enter Password", @type = "Password", @required = "Required" })
+                            </div>
+                        </div> @*<div>
+                                @Html.Raw(ViewBag.loginfailmassage)
+                            </div>*@
+                                        <div>
+                                            <input type="submit" name="sub" value="Login" class="loginidButton" />&nbsp;
+                                            <button type="button" onclick="document.getElementById('loginid').style.display='none'" class="cancelButton">Cancel</button>
+                                        </div>
+                                                        <div>
+                                                            
+                                                            @*<button type="button" class="logingoogle">Login with Google</button>*@
+                                                        </div>
+                                                                        <br />}
+                </div>
+                <br />
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container1 {
+        padding: 8px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 11;
+        left: 21%;
+        top: 0;
+        width: 58%;
+        padding-top: 100px;
+    }
+
+    .modal-content {
+    }
+
+    input[type=text], input[type=password] {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .form {
+        background-color: white;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".userloginbutton").click(function () {
+            let popUp = document.getElementById("PopUp");
+            popUp.remove();
+        });
+
+        $(".signupButton").click(function () {
+            let popUp = document.getElementById("PopUp");
+            popUp.remove();
+        });
+
+        $(".cancelButton").click(function () {
+            if (gameStarted == false) {
+                makePopUp("Play Chess");
+            }
+        });
+
+        $(".signupButton").click(function () {
+            $(".userloginbutton").prop('disabled', true);
+        });
+
+        $("#signcancel").click(function () {
+            $(".userloginbutton").prop('disabled', false);
+        });
+    });
+
+</script>

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Chess\Publish_Chess_master2_2062022</_PublishTargetUrl>
+    <History>True|2022-06-20T08:50:02.5941077Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Chess-master_2.dll">
+      <publishTime>06/20/2022 14:20:01</publishTime>
+    </File>
+    <File Include="bin/Chess-master_2.pdb">
+      <publishTime>06/20/2022 14:20:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/09/2020 03:22:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/19/2020 07:21:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/19/2020 07:21:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/19/2020 07:10:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/19/2020 07:22:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/19/2020 07:22:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/19/2020 07:10:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/19/2020 07:17:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/19/2020 07:21:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/19/2020 07:21:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/19/2020 07:19:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/19/2020 07:19:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/19/2020 07:20:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/19/2020 07:10:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 07:06:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 07:06:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/19/2020 07:10:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/19/2020 07:10:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Buffers.dll">
+      <publishTime>07/19/2017 22:31:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 01:59:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Memory.dll">
+      <publishTime>04/18/2019 04:54:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Numerics.Vectors.dll">
+      <publishTime>07/19/2017 22:31:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 01:59:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>11/15/2019 22:07:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/30/2018 05:09:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>06/19/2019 00:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/19/2020 07:20:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/19/2020 07:20:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/19/2020 07:10:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/19/2020 07:22:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/19/2020 07:22:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 12:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/18/2022 12:10:48</publishTime>
+    </File>
+    <File Include="Content/stats.css">
+      <publishTime>06/17/2022 20:55:18</publishTime>
+    </File>
+    <File Include="Content/styles.css">
+      <publishTime>06/18/2022 20:32:57</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/18/2022 12:05:08</publishTime>
+    </File>
+    <File Include="Images/Icons/Dropdown.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Icons/WebsiteIcon.png">
+      <publishTime>06/18/2022 18:21:46</publishTime>
+    </File>
+    <File Include="Images/KingInCheck.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/githubLogo.jpg">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/Instagram.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/linkedInLogo.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/personalWebsite.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Logo/youtubeLogo.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/MoveIndicator.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackBishop.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackKing.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackKnight.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackPawn.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackQueen.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/BlackRook.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/Blank.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteBishop.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteKing.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteKnight.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhitePawn.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteQueen.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Pieces/WhiteRook.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Images/Tint.png">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Scripts/app.js">
+      <publishTime>06/20/2022 14:17:35</publishTime>
+    </File>
+    <File Include="Scripts/ComputerPlayer.js">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Scripts/Pieces.js">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Scripts/stats.js">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Sound/ChessMoveSound.mp3">
+      <publishTime>06/17/2022 20:55:19</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/20/2022 13:07:27</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/20/2022 13:07:42</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>06/18/2022 12:05:08</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/18/2022 12:10:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/20/2022 14:20:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿@model Chess_master_2.Models.Online_Chess
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="Container">
+    <div class="form">
+        @using (Html.BeginForm())
+        {
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label>Name</label>
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @id = "name", @placeholder = "Name", @required = "Required" })
+                </div>
+                <div class="form-group col-md-12">
+                    <label>E-mail</label>
+                    @Html.TextBoxFor(m => m.email_id, new { @class = "form-control", @name = "email", @id = "email", @placeholder = "Email", @required = "Required" })
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="submit" name="sub" value="Sigh Up" class="btn btn-success" />
+            </div>
+        }
+    </div>
+</div>
+
